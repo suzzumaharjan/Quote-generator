@@ -11,7 +11,12 @@
     padding: 20px;
     border:1px solid black;
     border-radius: 5px;
-    margin: 10rem auto;
+    margin: 6rem auto;
+}
+.heading{
+    text-align: center;
+    font-size: 60px;
+    margin-top: 10px;
 }
 .quote-detail{
     margin: 20px 0;
@@ -92,3 +97,37 @@
     background-color: white;
     color: black;
   }
+  @media (max-width: 800px) {
+   .heading{
+    font-size: 50px;
+   }
+}
+@media (max-width: 600px) {
+    .heading{
+     font-size: 40px;
+    }
+    #quote{
+        padding: 5px;
+        font-size: 12px;
+    }
+    button{
+        font-size: 12px;
+    }
+    .container{
+        max-width: 400px;
+        
+     
+    }
+    .switch {
+     
+        width: 49px;
+        height: 20px;
+      }
+        
+  .slider::before {
+   
+    height: 14px;
+    width: 14px;
+  
+  }
+ }
