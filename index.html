@@ -10,29 +10,29 @@
     <div class="container">
         <div style="display: flex; justify-content: space-between;">
             <div class="dropdown-content">
-                <select id="category">
+                <select id="category" onchange="updateCategory()">
                     <option value="science">Science</option>
                     <option value="life">Life</option>
                     <option value="friendship">Friendship</option>
                 </select>
             </div>
             <label class="switch">
-                <input type="checkbox">
+                <input type="checkbox" id="darkModeToggle">
                 <span class="slider round"></span>
               </label>
         </div>
      
         <div class="quote-detail">
-            <p id="quote">hfjhfjjfgjfffffffffffffffffffffffffffffffffffffclmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmfffffffffffffffffffffffkl</p>
+            <p id="quote"></p>
         </div>
         <div class="font-control-btn">
             <button class="fontincrease-btn" onclick="IncreaseFont()">Increase Font</button>
             <button class="fontdecrease-btn" onclick="DecreaseFont()">Decrease Font</button>
         </div>
         <div class="Navigation">
-            <button class="previous">Previous</button>
-            <button class="next">Next</button>
-            <button class="Random">Random</button>
+            <button class="previous" onclick="previousQuote()">Previous</button>
+            <button class="next" onclick="nextQuote()">Next</button>
+            <button class="Random" onclick="randomQuote()">Random</button>
         </div>
     </div>
     
