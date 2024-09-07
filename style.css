@@ -5,21 +5,37 @@
    
 
 }
+body{
+  /* background: rgb(154,146,224); */
+background: linear-gradient(90deg, rgba(154,146,224,1) 38%, rgba(93,84,172,1) 65%, rgba(93,84,172,1) 66%);
+}
 .container{
     max-width: 550px;
     text-align: center;
     padding: 20px;
-    border:1px solid black;
+    border:1px solid white;
     border-radius: 5px;
     margin: 6rem auto;
+    background-color: white;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 .heading{
     text-align: center;
     font-size: 60px;
     margin-top: 10px;
 }
+#category
+{
+  width: 121px;
+    font-size: 16px;
+    padding: 4px;
+    background-color: slategrey;
+    border: 1px solid slategrey;
+}
 .quote-detail{
-    margin: 20px 0;
+  height: 80px;
+  max-width: 450px;
+    margin: 20px auto;
     border: 2px solid #4b4f58;
     border-radius: 3px;
     padding: 15px;
@@ -38,6 +54,11 @@
     border: 1px solid thistle ;
     border-radius: 3px;
 }
+.font-control-btn button:hover,.Navigation button:hover{
+background-color:rgb(153, 123, 153);
+color: white;
+}
+
 .switch {
     position: relative;
     display: inline-block;
@@ -92,6 +113,7 @@
   .dark-mode{
     background-color: black;
     color: white;
+    border:1px solid black;
   }
   .light-mode{
     background-color: white;
@@ -105,6 +127,12 @@
 @media (max-width: 600px) {
     .heading{
      font-size: 40px;
+    }
+    #category
+    {
+      width: 100px;
+      font-size: 13px;
+      padding: 4px;
     }
     #quote{
         padding: 5px;
@@ -131,3 +159,40 @@
   
   }
  }
+ @media (max-width: 600px) {
+  
+  .heading{
+   font-size: 30px;
+   margin-top: 40px;
+  }
+  #category
+  {
+    width: 90px;
+    font-size: 11px;
+    padding: 4px;
+  }
+  #quote{
+      padding: 5px;
+      font-size: 12px;
+  }
+  button{
+      font-size: 11px;
+  }
+  .container{
+      max-width: 400px;
+      
+   
+  }
+  .switch {
+   
+      width: 49px;
+      height: 20px;
+    }
+      
+.slider::before {
+ 
+  height: 14px;
+  width: 14px;
+
+}
+}
