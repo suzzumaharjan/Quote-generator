@@ -57,11 +57,9 @@ function previousQuote() {
 
 }
 function nextQuote() {
-    console.log(quotes[currentCategory].length);
+   
     if (quotes[currentCategory].length-1 > currentIndex) {
-        
         currentIndex += 1;
-        console.log(currentIndex)
         displayQuotes();
     }
  
@@ -71,7 +69,6 @@ function nextQuote() {
 const getRandomInteger = (min, max) => {
     min = Math.ceil(min)
     max = Math.floor(max)
-  
     return Math.floor(Math.random() * (max - min)) + min
   }
   function randomQuote()
@@ -82,12 +79,11 @@ const getRandomInteger = (min, max) => {
   }
   let click=1;
     document.querySelector('#darkModeToggle').addEventListener('change',()=>{
-        console.log("hilow");
         document.querySelector('.container').classList.toggle('dark-mode');
         const slider = document.querySelector('.slider');
         slider.classList.toggle('light-mode')
 
-// Change the background color of the ::before pseudo-element
+
 if(click==0){
     slider.style.setProperty('--slider-bg-color', 'white');
     click=1;
