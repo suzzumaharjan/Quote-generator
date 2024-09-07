@@ -32,6 +32,7 @@ let currentIndex = 0;
 function updateCategory()
 {
     currentCategory=document.getElementById('category').value;
+    currentIndex=0;
     displayQuotes();
 }
 function IncreaseFont() {
@@ -57,11 +58,14 @@ function previousQuote() {
 }
 function nextQuote() {
     console.log(quotes[currentCategory].length);
-    if (quotes[currentCategory].length > currentIndex) {
-
+    if (quotes[currentCategory].length-1 > currentIndex) {
+        
         currentIndex += 1;
+        console.log(currentIndex)
         displayQuotes();
     }
+ 
+   
 }
 
 const getRandomInteger = (min, max) => {
